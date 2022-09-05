@@ -31,7 +31,7 @@ p {
 li a {
     text-decoration: none;
     color: black;
-    margin: 20px;
+    margin: 15px;
 }
 
 header ul li {
@@ -40,16 +40,14 @@ header ul li {
 
 article:last-child {
     padding-left: 0;
-    flex: 2;
 }
 
 article {
     padding: 15px;
-    flex: 1;
 }
 
 article img {
-    width: 200px;
+    width: 210px;
     float:left;
     margin: 0 15px 15px 0;
 }
