@@ -5,6 +5,7 @@
 }
 
 body {
+    font-family: sans-serif;
     margin: 0;
 }
 
@@ -14,7 +15,7 @@ header img {
 }
 
 header {
-    background-color: rgb(209, 146, 157);
+    background-color: rgba(220, 190, 180, 255);
 }
 
 header ul {
@@ -28,7 +29,7 @@ header a {
     margin-left: 30px;
 }
 
-.width {
+.header-pilnas {
     width: 960px;
     margin: 0 auto;
     display: flex;
@@ -36,15 +37,26 @@ header a {
     align-items: center;
 }
 
-.art-house,
-.bad-art,
+.art-house-pilnas {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.bad-art-pilnas {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
 .stock-art {
     width: 960px;
     margin: 0 auto;
 }
 
 .art-house {
-    background-color: wheat;
+    background-color: rgb(214, 206, 191);
     border-bottom: 1px solid black;
     padding: 25px 0 30px 0;
 }
@@ -64,22 +76,20 @@ header a {
 }
 
 .bad-art{
+    background-color: rgb(210, 226, 226);
     border-bottom: 1px solid black;
-    padding: 25px 0 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    padding: 30px 0;
 }
 
 .bad-art h3 {
     order: -1;
     flex: 1 0 100%;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .bad-art nav {
     flex: 1;
-    border: 1px solid rgb(216, 214, 126);
+    border: 1px solid rgb(204, 169, 116);
     border-radius: 15px;
     justify-content: space-around;
 }
@@ -94,7 +104,7 @@ header a {
 }
 
 .bad-art ul li {
-    padding-bottom: 5px;
+    margin-top: 10px;
     border-bottom: 1px solid black;
 }
 
@@ -103,7 +113,31 @@ header a {
     text-decoration: none;
 }
 
+.stock-art h3 {
+    order: -1;
+    flex: 1 0 100%;
+    margin: 25px 0 25px 0;
+}
+
+.stock-art {
+    padding: 20px 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
 .stock-art img {
-    width: 15%;
-    border-radius: 40%;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+footer {
+    border-top: 1px solid black;
+    background-color: rgba(220, 190, 180, 255);
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
 }
