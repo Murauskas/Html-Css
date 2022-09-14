@@ -1,136 +1,164 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: sans-serif;
     margin: 0;
-}
-
-header img {
-    height: 50px;
-    margin: 10px 0 10px 0;
+    font-family: sans-serif;
 }
 
 header {
-    background-color: rgb(220, 190, 180);
+    background-color: brown;
+}
+
+header img {
+    margin-top: 5px;
+    width: 25%;
 }
 
 header ul {
+    display: inline-flex;
+    gap: 30px;
+    margin: 0;
     list-style: none;
-    display: flex;
+    align-items: center;
 }
 
-header a {
-    text-decoration: none;
+header nav ul li a {
     color: white;
-    margin-left: 30px;
+    text-decoration: none;
 }
 
-header .wrapper {
+header nav ul li button {
+    padding: 10px 5px;
+    margin: 0;
+    background-color: brown;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 960px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.wrapper {
-    width: 960px;
+.wrapper-2 {
     margin: 0 auto;
-}
-
-.stock-art {
     width: 960px;
-    margin: 0 auto;
 }
 
-.art-house {
-    background-color: rgb(214, 206, 191);
-    border-bottom: 1px solid black;
-    padding: 25px 0 30px 0;
+.alynas-baras {
+    background-image: url("https://alynas.lt/wp-content/uploads/2020/03/Alynas-barai.jpg");
+    min-height: 400px; 
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.art-house h1 {
-    margin-bottom: 50px;
-}
-
-.art-house h2 {
-    margin-bottom: 20px;
-}
-
-.art-house img {
-    width: 35%;
-    float: right;
-}
-
-.bad-art{
-    background-color: rgb(210, 226, 226);
-    border-bottom: 1px solid black;
-    padding: 30px 0;
-}
-
-.bad-art h2 {
-    margin-bottom: 25px;
-}
-
-.bad-art nav {
-    flex: 1;
-    border: 1px solid rgb(204, 169, 116);
-    border-radius: 15px;
-}
-
-.bad-art nav.left {
-    margin-right: 15px;
-}
-
-.bad-art section {
+.alynas-baras .wrapper {
     display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 400px;
+    height: 50vh;
 }
 
-.bad-art ul {
-    padding: 20px;
-    list-style: none;
+.alynas-baras h1 {
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    background-color: rgba(165, 42, 42, 0.6);
+    font-size: 22px;
 }
 
-.bad-art ul li {
-    margin-top: 10px;
-    border-bottom: 1px solid black;
-}
-
-.bad-art a {
-    color: black;
-    text-decoration: none;
-}
-
-.stock-art h2 {
-    order: -1;
-    flex: 1 0 100%;
-    margin: 25px 0 25px 0;
-}
-
-.stock-art {
-    padding: 20px 0;
-}
-
-.stock-art section {
+.korteliu-layout {
+    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+    gap: 10px;
 }
 
-.stock-art img {
-    border: 1px solid black;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.korteles h3,
+.contact-us h3 {
+    color: brown;
+}
+
+.kortele {
+    background: rgb(165,42,42);
+    background: linear-gradient(180deg, rgba(165,42,42,1) 0%, rgba(56,30,30,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    flex-basis: calc(25% - 7.5px);
+}
+
+.kortele img{
+    max-height: 200px;
+}
+
+.kortele h4 img {
+    margin-right: 5px;
+}
+
+.kortele img,
+.kortele h4 {
+    text-align: center;
+}
+
+.kortele p {
+    margin-left: 10px;
+}
+
+.contact-us form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-us h3 {
+    margin-top: 45px;
+}
+
+iframe {
+    width: 100%;
+}
+
+.formos-box {
+    width: 100%;
+}
+
+.formos-box input[type=submit] {
+    width: 140px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid brown;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form input:not(form input:nth-last-child(1)) {
+    padding: 7px;
+}
+
+form input:not(form input:nth-last-child(1)),
+textarea {
+    border: 1px solid rgb(185, 173, 173);
+}
+
+.conteineris {
+    gap: 10px;
+    display: flex;
+    flex: 1;
 }
 
 footer {
-    border-top: 1px solid black;
-    background-color: rgb(220, 190, 180);
+    margin-top: 15px;
+    padding: 10px;
     text-align: center;
-    margin-top: 30px;
-    padding: 20px;
+    color: white;
+    background-color: #a52a2a;
+}
+
+footer p {
+    margin: 0;
 }
