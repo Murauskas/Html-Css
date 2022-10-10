@@ -1,22 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid uzduotis</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main>
-        <div class="green pirmas">&nbsp</div>
-        <div class="green antras">&nbsp</div>
-        <div class="green trecias">&nbsp</div>
-        <div class="geltonas pirmas">&nbsp</div>
-        <div class="geltonas antras">&nbsp</div>
-        <div class="raudonas pirmas">&nbsp</div>
-        <div class="raudonas antras">&nbsp</div>
-        <div class="raudonas trecias">&nbsp</div>
+    <header class="header">
+        <div class="wrap">
+        <img class="header__image" src="images/webp/logo.webp" alt="logotipas">
+        <nav class="header__navigation header__navigation--hidden-small">
+            <ul class="navigation__list">
+                <li class="navigations__list navigations__list--items"><a href="#">Item</a></li>
+                <li class="navigations__list navigations__list--items"><a href="#">Item</a></li>
+                <li class="navigations__list navigations__list--items"><a href="#">Item</a></li>
+                <li class="navigations__list navigations__list--items"><a href="#">Item</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main class="main">
+        <article class="main__article">
+            <h1 class="main__article-title">Page title</h1>
+            <h2 class="main__article-title">What we do</h2>
+        
+        <section class="main__section">
+            <div class="cards__layout">
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+
+                <div class="card">
+                    <picture class="picture">
+                        <source srcset="images/webp/work-harder-800.webp" type="image/webp" media="(min-width: 900px)">
+                        <source srcset="images/webp/work-harder-400.webp" type="image/webp" media="(min-width: 400px)">
+                        <source srcset="images/webp/work-harder-400.webp 1x, images/webp/work-harder-800.webp 2x"
+                            type="image/webp">
+                        <img class="card__image" src="images/jpg/work-harder-800.jpg" alt="work-harder-800">
+                    </picture>
+                    <h3 class="bold__text-uppercase">any title will be uppercase</h3>
+                    <p class="card__paragraph"><span class="bold__text-uppercase">photo</span> above is 10 cm height.
+                        This paragraph can be of <span class="bold__text-uppercase">any</span> height</p>
+                </div>
+            </div>
+        </article>
+        </section>
+        <div class="main__form-box">
+            <h3>Contact Us</h3>
+            <form class="form" action="/index.html" method="get">
+                <input type="text" id="first" name="first" placeholder="There's no outline">
+                <input type="text" id="second" name="second" placeholder="Font-size is 1em">
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <div class="form__checkbox-container">
+                    <div class="form__column">
+                        <label for="flexbox">Flexbox</label>
+                        <input type="checkbox" name="flexbox" id="flexbox">
+                    </div>
+                    <div class="form__column">
+                        <label for="grid">Grid</label>
+                        <input type="checkbox" name="grid" id="grid">
+                    </div>
+                </div>
+                <input type="submit" value="A Button">
+            </form>
+        </div>
     </main>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <h4>Contacts on the left</h4>
+            <p>We're here</p>
+            <p>We're here</p>
+            <p>We're here</p>
+        </div>
+        <div class="footer__right">
+            <h4>Random links on the right</h4>
+            <p>Please click this link</p>
+            <p>Please click this link</p>
+            <p>Please click this link</p>
+            <p>Very Important</p>
+        </div>
+    </footer>
 </body>
+
 </html>
