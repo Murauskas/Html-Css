@@ -2,32 +2,62 @@ body {
     margin: 0;
 }
 
-div {
+.container {
+    position: relative;
+    min-height: 100vh;
+}
+
+.square {
+    color: white;
+    height: 100px;
+    width: 100px;
     background-color: black;
-    padding: 20px;
-    height: 1500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.square span {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* rotate(-45deg) translate(0, 0)*/
+
+/* header {
+    background-color: pink;
+    top: 0;
+    position: sticky;
+    z-index: 1;
 }
 
 nav {
     height: 70px;
 }
 
-header {
-    background-color: pink;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+div {
+    gap: 20px;
+    padding: 20px;
+    display: flex;
 }
 
-section {
-    top: 200px;
-    left: 100px;
-    height: 200px;
-    width: 400px;
-    border: 4px solid yellow;
-    background-color: yellow;
-    position: absolute;
 
+section {
+    background-color: red;
+    width: 400px;
+    flex: 1 0 0;
+}
+
+.yellow {
+    height: 300px;
+    background-color: yellow;
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 button {
@@ -39,3 +69,9 @@ button {
     position: absolute;
     left: 0;
 }
+
+@media screen and (min-width:680px) {
+    header {
+        position: initial;
+    }
+} */
