@@ -1,265 +1,38 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    margin: 0;
-}
-
-.main {
-    position: relative;
-    width: 70%;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px;
     gap: 40px;
 }
 
-.entry {
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+div {
+    overflow: hidden;
+    position: relative;
 }
 
-.entry::after {
+img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+div:hover img {
+    transform: scale(1.4);
+}
+
+div::after {
+    position: absolute;
+    top: 0;
+    left: 0;
     content: '';
+    background: linear-gradient(-45deg, black 50%, white 50%);
     display: block;
-    flex: 1;
+    width: 0;
+    height: 0;
+    transition: 1s;
 }
 
-.entry--reversed {
-    flex-direction: row-reverse;
+div:hover::after {
+    width: 50px;
+    height: 50px;
 }
-
-.entry--reversed .entry__section {
-    text-align: left;
-}
-
-.entry--final {
-    justify-content: center;
-}
-
-.entry--final::after {
-    content: none;
-}
-
-.entry__heading {
-    margin: 0;
-}
-
-.entry__heading--title {
-    margin-bottom: 20px;
-}
-
-.entry__section {
-    flex: 1;
-    text-align: right;
-}
-
-.entry__image,
-.entry__final--bubble {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 10px solid lightgray;
-}
-
-.main::before {
-    position: absolute;
-    content: '';
-    background-color: lightgray;
-    width: 2px;
-    height: 90%;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%, -50%);
-}
-
-.entry__final--bubble {
-    font-size: 20px;
-    background-color: yellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1em;
-    text-align: center;
-}
-
-/* * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: rgb(37, 37, 37);
-}
-
-.container {
-    min-height: 100vh;
-    position: relative;
-}
-
-nav {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0;
-    align-items: center;
-}
-
-nav ul li {
-    overflow: hidden;
-    list-style-type: none;
-    margin-bottom: 30px;
-}
-
-a::before, 
-a::after {
-    content: "";
-    left: 0;
-    transition: 1s ease-in-out;
-    position: absolute;
-    background-color: red;
-    width: 100%;
-    height: 100%;
-    
-}
-
-a::before {
-    top: 0;
-    left: -100%;
-}
-a::after {
-    height: 10%;
-    bottom: 0;
-    left: 100%;
-}
-
-a:hover::before {
-    left: 100%;
-}
-
-a:hover::after {
-    left: 0;
-    transition-delay: 0.5s;
-}
-
-nav ul li a {
-    position: relative;
-    font-size: 28px;
-    color: white;
-    text-decoration: none;
-} */
-
-/* @keyframes banana {
-    0% {
-        left: 0;
-    }
-
-    10% {
-        transform: rotate(90deg);
-    }
-
-    40% {
-        transform: rotate(150deg);
-    }
-
-    50% {
-        left: 300px;
-    }
-
-    100% {
-        left: 0px;
-    }
-}
-
-div {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    animation-name: banana;
-    animation-duration: 4s;
-    animation-direction: reverse;
-    animation-iteration-count: infinite;
-} */
-
-/* * {
-    box-sizing: border-box;
-}
-
-div {
-
-top: 100px;
-    border: 1px solid black;
-    width: 30%;
-    padding: 2rem;
-    position: relative;
-    overflow: hidden;
-}
- .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -100%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-
- }
-
- .div:hover .overlay{
-    top: 0;
- } */
-
-/* body {
-    display: flex;
-}
-
-div {
-    border: 10px solid red;
-    position: relative;
-    height: 100px;
-    width: 200px;
-}
-
-button {
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 10px 30px;
-    font-size: 4rem;
-    transition-duration: 1s;
-    transition-property: transform;
-    position: absolute;
-    top: 0;
-    /* transition-duration: 1000ms;
-    transition-property: background-color, border-radius, font-size;
-    transition-delay: 100ms;
-    transition-timing-function: ease-in; }*/
-
-
-/* button:hover {
-    top: -5px;
-
-}
-
-input {
-    outline: none;
-    transition: border-color 250ms linear;
-    border: 1px solid black;
-}
-
-input:focus {
-    border-color: green;
- 
- } */
