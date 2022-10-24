@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4115bbefe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__flex">
+                <h1 class="header__title">
+                    Best <span class="header__title--color">ToDo</span> App
+                </h1>
+            <nav class="header__navigation">
+                <ul class="header__navigation--list">
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main class="edit__main">
+        <form action="index.html" method="get" class="edit__tasks">
+            <h2 class="form__heading">Edit Task</h2>
+            <div class="form__edit--task">
+                <div class="form__task--pair">
+                    <label for="task-id" name="id">Task ID</label>
+                    <input type="number" name="number" placeholder="123456789" disabled>
+                </div>
+                <div class="form__task--pair">
+                    <label for="name" name="name">Name</label>
+                    <input type="text" name="name" placeholder="Take out trashes" required>
+                </div>
+                <div class="form__task--pair">
+                    <label for="complete" name="complete">Completed</label>
+                    <input type="checkbox" name="check">
+                </div>
+                <button type="submit">Edit</button>
+            </div>
+            <span class="error">There Was An Error</span>
+        </form>
+        <div class="back__to--tasks">
+            <a href="/index.html"><span>Back To Tasks</span></a>
+        </div>
+    </main>
+</body>
+
+</html>

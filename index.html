@@ -1,24 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fold container</title>
+    <title>Best ToDo App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d4115bbefe.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <div>
-        <img src="images/jpg/work-harder-400.jpg" alt="image">
-    </div>
-    <div>
-        <img src="images/jpg/work-harder-400.jpg" alt="image">
-    </div>
-    <div>
-        <img src="images/jpg/work-harder-400.jpg" alt="image">
-    </div>
-    <div>
-        <img src="images/jpg/work-harder-400.jpg" alt="image">
-    </div>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__flex">
+                <h1 class="header__title">
+                    Best <span class="header__title--color">ToDo</span> App
+                </h1>
+            <nav class="header__navigation">
+                <ul class="header__navigation--list">
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="header__list--item"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <form action="index.html" method="get" class="your__tasks">
+            <h2 class="form__heading">Your Tasks</h2>
+            <div class="form__search">
+                <input type="search" name="search" placeholder="e.g. wash dishes" required>
+                <button type="submit">Add</button>
+            </div>
+            <span class="error">There Was An Error</span>
+        </form>
+
+        <section class="tasks">
+            <div class="task first__task">
+                <h3 class="task__heading">
+                    Take Out Trashes
+                </h3>
+                <div class="task__icons">
+                    <span class="task__icon"><a href="/edit.html"><i class="fa-solid fa-pen-to-square task__icons--edit"></i></a></span>
+                    <span class="task__icon"><a href="#"><i class="fa-solid fa-trash-can task__icons--delete"></i></a></span>
+                </div>
+            </div>
+            <div class="task second__task">
+                <div class="double--task">
+                <span class="task__done">
+                    <a href="#"><i class="fa-regular fa-circle-check task__done--icon"></i></a>
+                </span>
+                <h3 class="task__heading task__cross">
+                    Walk The Dog
+                </h3>
+            </div>
+                <div class="task__icons">
+                    <span class="task__icon"><a href="#"><i class="fa-solid fa-pen-to-square task__icons--edit"></i></a></span>
+                    <span class="task__icon"><a href="#"><i class="fa-solid fa-trash-can task__icons--delete"></i></a></span>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
